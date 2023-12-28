@@ -1,0 +1,31 @@
+body{
+    font-family: 'Single Day', cursive;
+    background-color: #F2FFE9;
+}
+
+.test{
+    background-color: #A6CF98;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 600;
+    color:#750E21;
+}
+
+label{
+    font-size: 25px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 50px;
+}
+
+.ee p{
+    font-size: 20px;
+}
+
+span{
+    font-size: 70px;
+}

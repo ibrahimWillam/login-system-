@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="shortcut icon" href="./img/download.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./sytle/bootstrap.min.css">
+    <link rel="stylesheet" href="./sytle/style.css">
+</head>
+<body>
+    
+<div class="w-75 mx-auto mt-5 shadow-lg test">
+    <h1 class="text-center mt-5 py-5">Smart Login System...   </h1>
+    <div class="container">
+
+        <div id="signin_Page" class="pb-5">
+
+
+        <label for="emailInput-login" >email:</label>
+        <input type="email" id="emailInput-login" class="form-control my-2" placeholder="enter your e-mail">
+        <!-- <div class="alert alert-danger p-0 " id="emailAlert"><p>all inputs needed</p></div> -->
+
+
+        <label for="passwordInput-login" >Password:</label>
+        <input type="password" id="passwordInput-login" class="form-control my-2" placeholder="enter your password">
+        <div class="alert alert-danger p-0 text-center d-none " id="signinAlert"><p>incorrect email or password</p></div>
+        <div class="alert alert-danger p-0 d-none text-center" id="emptyAlert"><p>**all inputs needed</p></div>
+
+        <button class="btn btn-info mt-5 w-100" id="loginBtn" onclick="login()">log-in</button>
+
+        <div class="text-center my-3 ee" id="signupLink"><p>Don’t have an account? <a  onclick="displaySignup()" class="text-decoration-none" > sign up </a> </p></div>
+        <!-- <button onclick="displaySignup()"> sign up </button> -->
+
+    </div>
+
+    <div id="signup_Page" class="d-none  pb-5">
+
+        
+        <label for="nameInput" id="nameLabel">your name:</label>
+        <input type="email" id="nameInput" oninput="validationName()" class="form-control my-2" placeholder="enter your name">
+        <div class="alert alert-danger p-0 d-none " id="nameAlert"><p>name must be at least 3 and max 10 </p></div>
+
+
+        <label for="emailInput" id="emailLabel">email:</label>
+        <input type="email" id="emailInput" oninput=" validationEmail()" class="form-control my-2" placeholder="enter your e-mail">
+        <div class="alert alert-danger p-0  d-none" id="emailAlert"><p>your email must be like: username@example.com</p></div>
+
+
+        <label for="passwordInput" id="passwordLabel">Password:</label>
+        <input type="password" id="passwordInput" oninput="validationPassword()" class="form-control my-2" placeholder="enter your password">
+        <div class="alert alert-danger p-0 d-none " id="passwordAlert"><p>password must be at least 4 and max 20 </p></div>
+
+        <button class="btn btn-warning w-100 mt-5" id="SignupBtn" onclick="addUser()">Sign-up</button>
+
+        <div class="text-center my-3 ee" id="signupLink"><p> you have an account alredy? <a onclick=" displaySignin()" class="text-decoration-none " >log-in</a> </p></div>
+
+    </div>
+
+
+
+    <div id="welcome-page" class="pb-5 mb-5 d-none">
+        <div class="text-end pe-5 mt-2 pb-5">
+            <button class="btn btn-sm btn-outline-danger" onclick="displaySignin()">log-out</button>
+        </div>
+        <div class="my-5 pt-5">
+            <h2 class="text-center pb-5 mb-5">welcome <span id="username" class="text-info"></span>!</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
